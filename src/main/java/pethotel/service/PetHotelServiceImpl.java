@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import pethotel.dto.CompanyDto;
 import pethotel.dto.ConsultingDto;
 import pethotel.mapper.PetHotelMapper;
 
@@ -40,6 +41,13 @@ public class PetHotelServiceImpl implements PetHotelService {
 	public ConsultingDto detail(int consultingIdx) throws Exception {
 	
 		return petHotelMapper.detail(consultingIdx);
+	}
+
+	//업체등록버튼
+	@Override
+	public void insertcompany(CompanyDto companydto) throws Exception {
+		petHotelMapper.insertcompany(companydto);
+		
 	}
 
 }

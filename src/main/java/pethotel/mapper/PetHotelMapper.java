@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 
+import pethotel.dto.CompanyDto;
 import pethotel.dto.ConsultingDto;
 @Mapper
 public interface PetHotelMapper {
@@ -15,4 +16,6 @@ public interface PetHotelMapper {
 	List<ConsultingDto> consultinglist()throws Exception;
 	
 	ConsultingDto detail(int consultingIdx) throws Exception;
+	
+	void insertcompany(CompanyDto companyDto)throws Exception;
 }
