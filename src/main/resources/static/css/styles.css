@@ -34,7 +34,7 @@
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #ffc800;
-  --bs-secondary: #6c757d;
+  --bs-sebtdary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc800;
@@ -446,6 +446,35 @@ legend + * {
   direction: ltr;
 }
 */
+.image{
+  object-fit: fill;
+
+  width: 280px;
+  height:200px;
+  margin-right:37px;
+  margin-left:36px;
+}
+.image1{
+  width:32%;
+  height:330px;
+  list-style: none;
+  float:left;
+ 
+}
+
+.margin{
+  margin-left: 1300px;
+}
+.image-text{
+  height:auto;
+  text-align: center;
+  
+}
+.black{
+  color:#000;
+   text-decoration: none;
+}
+
 ::-webkit-search-decoration {
   -webkit-appearance: none;
 }
@@ -2223,6 +2252,15 @@ progress {
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(255, 200, 0, 0.25);
 }
+
+.form-control:hover {
+  color: #212529;
+  background-color: #fff;
+  border-color: #ffe480;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(255, 200, 0, 0.25);
+}
+
 .form-control::-webkit-date-and-time-value {
   height: 1.5em;
 }
@@ -3033,8 +3071,10 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #ffc800;
-  border-color: #ffc800;
+  /* background-color: #ffc800; */
+  background-color: #333;
+  /* border-color: #ffc800; */
+  border-color: #333;
 
 }
 .btn-primary:hover {
@@ -9425,7 +9465,7 @@ textarea.form-control-lg {
 
   .text-lg-start {
     text-align: left !important;
-    margin-left : 44%;
+    margin-left : 37%;
   }
 
   .text-lg-end {
@@ -10803,6 +10843,7 @@ html {
 body {
   position: relative;
   overflow-x: hidden;
+  
 }
 
 p {
@@ -10810,7 +10851,8 @@ p {
 }
 
 .page-section {
-  padding: 6rem 0;
+  min-height:100vh;
+  padding: 7rem 0;
 }
 .page-section h2.section-heading, .page-section .section-heading.h2 {
   font-size: 2.5rem;
@@ -10867,7 +10909,7 @@ p {
   text-transform: uppercase;
 }
 #mainNav .navbar-brand img {
-  height: 2rem;
+  height: 2.8rem;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -10892,7 +10934,7 @@ p {
     transition: font-size 0.3s ease-in-out;
   }
   #mainNav .navbar-brand img {
-    height: 2rem;
+    height: 2.8rem;
     transition: height 0.3s ease-in-out;
   }
   #mainNav.navbar-shrink {
@@ -10905,7 +10947,7 @@ p {
   }
   #mainNav.navbar-shrink .navbar-brand svg,
 #mainNav.navbar-shrink .navbar-brand img {
-    height: 1.5rem;
+    height: 2.8rem;
   }
   #mainNav .navbar-nav .nav-item {
     margin-right: 1rem;
@@ -11282,6 +11324,9 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .footer {
+	width: 100%; z-index: 1; bottom:0; position: fixed;
+	background-color:#212529;
+	color: white;
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -11295,3 +11340,191 @@ section#contact form#contactForm :-ms-input-placeholder {
   margin-top:60px;
   margin-left:48%;
 }
+.btn-registration1 {
+  margin-top:60px;
+  margin-left:54%;
+}
+.btn-registration2 {
+  margin-top:60px;
+  margin-left:2%;
+}
+.btn-registration3 {
+  margin-top:60px;
+  margin-left:63%;
+}
+.business-answer .content {
+  width:40%;
+  margin: 0 auto;
+  /* margin-left:30%; */
+  border-top: 2px solid #ffc800;
+  margin-bottom: 20px;
+}
+.business-answer h2 {
+  font-size:25px;
+  margin-bottom:40px;
+  padding-bottom:25px;
+  margin-top:25px;
+  border-bottom: 1px solid #ffc800;
+
+}
+
+.business-answer h3 {
+  font-size:20px;
+  margin-bottom:20px;
+}
+
+.business-answer p.comment-p {
+height:300px;
+border-bottom: 2px solid #ffc800;
+}
+
+.btn-answer {
+  margin-left:88%;
+}
+
+.business-answer p.comment-list {
+  height: 130px;
+  border-bottom: 1px dashed grey;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+
+}
+
+.business-answer .comment {
+  width:40%;
+  margin: 0 auto;
+}
+
+.business-answer .comment .form-control {
+  width:100%;
+}
+
+.business-qa_list {
+  width:60%;
+  margin:0 auto;
+}
+
+.business-qa_list table thead tr th, tbody tr th {
+  text-align: center;
+}
+
+.business-qa_list h2 {
+  font-size:30px;
+  margin-bottom:40px;
+}
+
+.caption-top tbody tr td {
+  padding-left:80px;
+}
+
+.caption-top tbody tr td a {
+  color:#333;
+  text-decoration: none;
+  display:block;
+}
+
+.business-qa_list .write {
+margin-top:15px;
+margin-left:92%;
+}
+
+
+.page-section h2.company-name, .page-section .company-name.h2 {
+  font-size: 2.0rem;
+  margin-top: 50px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.picture {
+	display:block;
+	width: 630px;
+	margin: 0 auto;
+}
+
+.picture img {
+	display:block;
+	width:100%;
+	height:auto;
+}
+
+.company-info {
+	margin-top:20px;
+	display:inline-block;
+}
+
+.btn_wrap {
+	text-align : center;
+	display:inline-block;
+}
+
+.btn-regist {
+	margin-left: 50%;
+}
+
+.wrap {
+	min-height : 100vh;
+}
+
+.detail_register {   
+    background-image:url('/img/left-dog.png'), url('/img/right-dog.png'), url('/img/pngwing.png');
+    background-size : 20%, 23%, 100%;
+	background-position:5% 70% ,95% 90%, 0 10%;
+	background-repeat:no-repeat;
+}
+
+/* .detail_register {   
+    background-image:url('/img/left-dog.png'), url('/img/right-dog.png');
+    background-size : 20%, 23%;
+	background-position:5% 70% ,95% 90%;
+	background-repeat:no-repeat;
+}
+ */
+ 
+ .rv {
+ 	width:100%;
+ 	height:230px;
+ 	background-image : url("/img/rv.jpg");
+ }
+ 
+  .rv strong {
+  	margin-left:30%;
+	line-height:230px;
+	font-size:2rem;
+  }
+  
+  .qna-top {
+ 	width:100%;
+ 	height:230px;
+ 	background-image : url("/img/qna-top.jpg");
+ }
+ 
+  .qna-top strong {
+  	margin-left:30%;
+	line-height:230px;
+	font-size:2rem;
+  }
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

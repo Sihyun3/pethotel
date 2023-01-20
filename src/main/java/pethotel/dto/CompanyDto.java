@@ -9,4 +9,5 @@ public class CompanyDto {
 	private String companyPhoto;
 	private String companyInfo;
 	private String companyAddress;
+
 }
